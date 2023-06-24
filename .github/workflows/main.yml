@@ -27,4 +27,4 @@ jobs:
           git pull origin main
           git status
           sudo composer install
-          npm install
+          sudo npm install
