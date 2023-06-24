@@ -6,10 +6,57 @@
     <title>Document</title>
 </head>
 <body>
-    <ol>
-        <li>Test</li>
-        <li>Test</li>
-        <li>Test</li>
-    </ol>
+   
+
+
+    <style>
+
+        .name{
+            border: 2px solid black;
+            padding: 10px;
+            width: auto;
+            margin-left: 1px;
+            display: inline-block;
+        }
+
+    </style>
+
+    <div class="names" id="names">
+
+    </div>
+
+
+
+    <script>
+
+            let names = document.getElementById('names');
+
+
+            let namelist = [
+                "Jerwen Reloz",
+                "Toneth",
+                "Jerrry",
+                "Thea"
+            ];
+
+
+            let name = "";
+            namelist.forEach(element => {
+                name += `
+                <div class="name">
+                    ${element}
+                </div>
+                `
+            });
+
+
+            names.innerHTML = name;
+
+
+
+    </script>
+
+
+
 </body>
 </html>
